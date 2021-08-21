@@ -11,7 +11,10 @@
     @apply text-green font-ivypresto-display font-thin tracking-tight leading-tight mb-6 uppercase text-largest md:text-huge lg:text-huger lg:mb-10;
   }
   h3 {
-    @apply text-green font-ivypresto-display font-thin tracking-tight leading-tight mb-6 uppercase text-large sm:text-larger md:text-largest lg:text-huge lg:mb-10;
+    @apply text-green font-ivypresto-display font-thin tracking-tight leading-tight uppercase text-large sm:text-larger md:text-largest lg:text-huge;
+  }
+  h4 {
+    @apply font-montserrat-medium tracking-standard uppercase text-red text-small whitespace-nowrap w-full;
   }
   img {
     @apply h-full object-cover w-full;

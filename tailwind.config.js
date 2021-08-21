@@ -47,6 +47,7 @@ module.exports = {
     lineHeight: {
       'standard': '1.5',
       'tight': '1.2',
+      'none': '0',
     },
     extend: {
       spacing: {
@@ -58,6 +59,7 @@ module.exports = {
         'span-16': 'span 16 / span 16',
       },
       height: {
+        '112': '28rem',
         '19/20': '95%',
       },
       maxHeight: {
