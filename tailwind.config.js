@@ -44,6 +44,10 @@ module.exports = {
       'standard': '0.12em',
       'tight': '0.05em',
     },
+    lineHeight: {
+      'standard': '1.5',
+      'tight': '1.2',
+    },
     extend: {
       spacing: {
         '16.6/100': '6%',

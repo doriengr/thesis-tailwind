@@ -17,12 +17,21 @@
     @apply h-full object-cover w-full;
   }
   a {
-    @apply cursor-pointer transition-all duration-300 ease-in-out; 
+    @apply block cursor-pointer transition-all duration-300 ease-in-out; 
+  }
+  button {
+    @apply block cursor-pointer transition-all duration-300 ease-in-out; 
   }
 }
 
 @layer components {
   .wrapper {
     @apply max-w-screen-2xl mx-auto my-20 md:my-24 lg:my-28 2xl:my-40 2xl:px-16.6/100;
+  }
+  .visually-hidden {
+    @apply h-0.5 overflow-hidden absolute whitespace-nowrap w-0.5;
+  }
+  .font-montserrat-wide {
+    @apply font-montserrat-medium tracking-wide uppercase;
   }
 }

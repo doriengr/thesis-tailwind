@@ -2,7 +2,7 @@
 <html lang="de">
   <head> 
     <!-- Thesis · Dorien Grönwald -->
-    <!-- Umsetzung mit reinem, handgeschriebenen CSS -->
+    <!-- Umsetzung mit dem Utility-Klassen basierten CSS-Framework TailwindCSS -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Flavour Earth">
@@ -24,7 +24,126 @@
 
     <link rel="stylesheet" href="/build/styles.css">
   </head>
-  <body>
+  <body class="bg-beige-lightest text-dark font-adobe-caslon-pro text-smaller tracking-standard leading-standard lg:text-large">
+    <header class="bg-beige-lightest bg-opacity-80 fixed left-0 right-0 top-0 px-16.6/100 w-screen z-50">
+      <a href="#hero" aria-label="Link direkt zum Inhalt" title="Link direkt zum Inhalt" class="visually-hidden">Link direkt zum Inhalt</a>
+      <div class="flex flex-row justify-between items-center border-b border-brown py-4 md:py-6 lg:py-4 lg:grid lg:grid-cols-5 lg:items-end">
+        <a href="#" class="flex flex-row items-center transform lg:col-start-3 lg:col-span-1 lg:row-start-1 lg:flex lg:flex-col lg:seld-end hover:scale-105 hover:opacity-60" aria-label="Zum Anfang der Startseite" title="Zum Anfang der Startseite">
+          <svg class="h-5 pr-2 lg:h-10 lg:pr-0 lg:pb-2" width="18.89" height="20" viewBox="0 0 21.74 49">
+            <defs>
+              <style>.b{fill:none;stroke:#b3a898;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style>
+            </defs>
+            <g>
+              <g>
+                <path class="b" d="M15.73,10.42a4.86,4.86,0,0,1-9.72,0C6,7.73,10.87,1,10.87,1S15.73,7.73,15.73,10.42Z"/>
+                <path class="b" d="M1,30.16V33.8C1,38.33,5.29,42,10.59,42h0S13.43,32.28,1,30.16Z"/>
+                <path class="b" d="M20.74,30.16V33.8c0,4.53-4.29,8.2-9.59,8.2h0S8.31,32.28,20.74,30.16Z"/>
+                <path class="b" d="M1,20.74v3.64c0,4.53,4.29,8.21,9.59,8.21h0S13.43,22.87,1,20.74Z"/>
+                <path class="b" d="M20.74,20.74v3.64c0,4.53-4.29,8.21-9.59,8.21h0S8.31,22.87,20.74,20.74Z"/>
+                <path class="b" d="M1,11.39V15c0,4.53,4.29,8.2,9.59,8.2h0S13.43,13.51,1,11.39Z"/>
+                <path class="b" d="M20.74,11.39V15c0,4.53-4.29,8.2-9.59,8.2h0S8.31,13.51,20.74,11.39Z"/>
+                <line class="b" x1="10.86" y1="42" x2="10.86" y2="48"/>
+              </g>
+            </g>
+          </svg>
+          <p class="font-montserrat-wide text-green text-smallest lg:text-smaller">Flavour Earth</p>
+        </a>
+        <button aria-label="Öffne die Navigation" title="Öffne die Navigation" class="js-navigation-toggle relative z-50 group lg:hidden">
+          <div class="w-7 h-0.5 bg-red mb-1 ml-auto transition-all duration-300 ease-in-out transform group-hover:bg-green"></div>
+          <div class="w-6 h-0.5 bg-red mb-1 ml-auto transition-all duration-300 ease-in-out transform group-hover:bg-green"></div>
+          <div class="w-5 h-0.5 bg-red mb-1 ml-auto transition-all duration-300 ease-in-out transform group-hover:bg-green"></div>
+        </button>
+        <!-- navigation -->
+        <nav class="js-navigation h-screen w-screen bg-brown absolute inset-0 z-40 hidden lg:block lg:h-auto lg:bg-opacity-0 lg:relative lg:col-start-1 lg:row-start-1 lg:col-span-2 lg:w-auto lg:self-end">
+          <div class="flex flex-col items-center justify-center h-full lg:h-auto lg:flex-row lg:block">
+            <a href="#" class="block mb-12 opacity-70 transform lg:hidden hover:scale-105" aria-label="Zum Anfang der Startseite" title="Zum Anfang der Startseite">
+              <svg class="w-28 h-auto mx-auto block" viewBox="0 0 112.55 51.92">
+                <defs>
+                    <style>.a{fill:#f9f7f4;}</style>
+                </defs>
+                <g>
+                  <g>
+                      <path class="a" d="M56.28,10.72h0a3.82,3.82,0,0,1-3.81-3.81c0-1.93,3.05-6.22,3.4-6.7A.51.51,0,0,1,56.28,0h0a.49.49,0,0,1,.4.21C57,.69,60.09,5,60.09,6.91h0A3.82,3.82,0,0,1,56.28,10.72Zm0-9.35c-1.05,1.52-2.82,4.35-2.81,5.54a2.81,2.81,0,0,0,2.81,2.81h0a2.81,2.81,0,0,0,2.81-2.81C59.09,5.72,57.32,2.89,56.28,1.37Zm3.31,5.54h0Z"/>
+                      <path class="a" d="M56.09,28.92c-3.88,0-7-2.73-7-6.09V20.35a.49.49,0,0,1,.58-.49c3,.51,5,1.69,6.19,3.51a6.9,6.9,0,0,1,.74,5.19A.51.51,0,0,1,56.09,28.92Zm0-.51h0Zm-6-7.45v1.87c0,2.69,2.49,4.9,5.62,5.07a5.81,5.81,0,0,0-.71-4A7.24,7.24,0,0,0,50.06,21Z"/>
+                      <path class="a" d="M56.47,28.92a.5.5,0,0,1-.48-.36,6.9,6.9,0,0,1,.74-5.19c1.14-1.82,3.22-3,6.18-3.51a.5.5,0,0,1,.41.11.53.53,0,0,1,.18.38v2.48C63.5,26.19,60.34,28.92,56.47,28.92Zm6-8c-2.36.5-4,1.49-4.92,2.94a5.79,5.79,0,0,0-.71,4c3.14-.17,5.63-2.38,5.63-5.07Z"/>
+                      <path class="a" d="M56.09,22.51c-3.88,0-7-2.73-7-6.09V13.94a.49.49,0,0,1,.58-.49c3,.51,5,1.69,6.19,3.51a6.9,6.9,0,0,1,.74,5.19A.51.51,0,0,1,56.09,22.51Zm0-.5h0Zm-6-7.47v1.88c0,2.69,2.49,4.9,5.62,5.08a5.84,5.84,0,0,0-.71-4A7.29,7.29,0,0,0,50.06,14.54Z"/>
+                      <path class="a" d="M56.47,22.51a.5.5,0,0,1-.48-.36A6.9,6.9,0,0,1,56.73,17c1.14-1.82,3.22-3,6.18-3.51a.48.48,0,0,1,.41.11.49.49,0,0,1,.18.38v2.48C63.5,19.78,60.34,22.51,56.47,22.51Zm6-8c-2.36.51-4,1.49-4.92,2.94a5.84,5.84,0,0,0-.71,4c3.14-.18,5.63-2.39,5.63-5.08Z"/>
+                      <path class="a" d="M56.09,16.11c-3.88,0-7-2.72-7-6.08V7.57a.49.49,0,0,1,.58-.49c3,.51,5,1.69,6.19,3.51a6.9,6.9,0,0,1,.74,5.17A.5.5,0,0,1,56.09,16.11Zm0-.5h0Zm-6-7.43V10c0,2.69,2.49,4.9,5.62,5.07a5.8,5.8,0,0,0-.7-4A7.27,7.27,0,0,0,50.06,8.18Z"/>
+                      <path class="a" d="M56.47,16.11a.5.5,0,0,1-.48-.35,6.87,6.87,0,0,1,.73-5.17c1.14-1.82,3.22-3,6.19-3.51a.5.5,0,0,1,.41.11.53.53,0,0,1,.18.38V10C63.5,13.39,60.34,16.11,56.47,16.11Zm6-7.93c-2.36.5-4,1.48-4.92,2.93a5.76,5.76,0,0,0-.71,4C60,14.93,62.5,12.72,62.5,10Z"/>
+                      <path class="a" d="M56.27,33a.5.5,0,0,1-.5-.5V28.42a.5.5,0,1,1,1,0V32.5A.5.5,0,0,1,56.27,33Z"/>
+                  </g>
+                </g>
+                <path class="a" d="M1.1,45.09v2.68H5v.95H1.1v3.11H0v-7.7H5.43v1Z"/>
+                <path class="a" d="M8.53,44.13H9.62v6.75h4.17v.95H8.53Z"/>
+                <path class="a" d="M21.54,49.91H17.45l-.85,1.92H15.47L19,44.13H20l3.5,7.7H22.39ZM21.15,49l-1.66-3.77L17.83,49Z"/>
+                <path class="a" d="M32.5,44.13l-3.37,7.7H28l-3.39-7.7h1.19l2.77,6.33,2.8-6.33Z"/>
+                <path class="a" d="M36.32,51.41A3.83,3.83,0,0,1,34.85,50a4.1,4.1,0,0,1,0-4,3.83,3.83,0,0,1,1.47-1.41,4.35,4.35,0,0,1,2.1-.51,4.28,4.28,0,0,1,2.09.51A3.76,3.76,0,0,1,42,46a4.16,4.16,0,0,1,0,4,3.76,3.76,0,0,1-1.47,1.41,4.28,4.28,0,0,1-2.09.51A4.35,4.35,0,0,1,36.32,51.41ZM40,50.56A2.84,2.84,0,0,0,41,49.5a3.14,3.14,0,0,0,0-3A2.84,2.84,0,0,0,40,45.41,3,3,0,0,0,38.42,45a3.06,3.06,0,0,0-1.53.39,2.82,2.82,0,0,0-1.08,1.06,3.14,3.14,0,0,0,0,3,2.82,2.82,0,0,0,1.08,1.06,3.15,3.15,0,0,0,1.53.38A3.1,3.1,0,0,0,40,50.56Z"/>
+                <path class="a" d="M46.52,51a3.49,3.49,0,0,1-.86-2.53V44.13h1.1v4.34c0,1.65.72,2.47,2.17,2.47a2.06,2.06,0,0,0,1.61-.61,2.64,2.64,0,0,0,.57-1.86V44.13h1.06v4.38a3.5,3.5,0,0,1-.85,2.54,3.24,3.24,0,0,1-2.4.87A3.18,3.18,0,0,1,46.52,51Z"/>
+                <path class="a" d="M61.12,51.83l-1.66-2.36-.49,0h-1.9v2.34H56v-7.7h3a3.58,3.58,0,0,1,2.36.72,2.43,2.43,0,0,1,.85,2,2.55,2.55,0,0,1-.44,1.52,2.51,2.51,0,0,1-1.25.91l1.83,2.58Zm-.59-3.72a1.59,1.59,0,0,0,.55-1.29,1.53,1.53,0,0,0-.55-1.28,2.45,2.45,0,0,0-1.59-.45H57.07v3.47h1.87A2.45,2.45,0,0,0,60.53,48.11Z"/>
+                <path class="a" d="M75.59,50.88v.95H70v-7.7h5.44v1H71.1v2.37H75v.93H71.1v2.49Z"/>
+                <path class="a" d="M83.82,49.91H79.73l-.85,1.92H77.75l3.49-7.7h1.09l3.49,7.7H84.67ZM83.44,49l-1.67-3.77L80.11,49Z"/>
+                <path class="a" d="M93.65,51.83,92,49.47l-.48,0h-1.9v2.34h-1.1v-7.7h3a3.53,3.53,0,0,1,2.35.72,2.4,2.4,0,0,1,.86,2,2.55,2.55,0,0,1-.44,1.52,2.51,2.51,0,0,1-1.25.91l1.82,2.58Zm-.58-3.72a1.59,1.59,0,0,0,.55-1.29,1.53,1.53,0,0,0-.55-1.28,2.45,2.45,0,0,0-1.59-.45H89.61v3.47h1.87A2.45,2.45,0,0,0,93.07,48.11Z"/>
+                <path class="a" d="M99.46,45.09H96.82v-1h6.37v1h-2.64v6.74H99.46Z"/>
+                <path class="a" d="M112.55,44.13v7.7h-1.1V48.4H107v3.43h-1.1v-7.7H107v3.31h4.42V44.13Z"/>
+              </svg>
+            </a>
+            <ul class="w-full font-montserrat-medium text-base text-center tracking-wide lg:text-right lg:flex lg:text-smallest lg:self-end">
+              <li class="mb-5 lowercase lg:mb-0 lg:mr-5"><a class="js-link text-beige-lightest lg:text-green hover:text-green lg:hover:text-dark" href="#history" aria-label="Zur Geschichte" title="Zur Geschichte">Geschichte</a></li>
+              <li class="mb-5 lowercase lg:mb-0 lg:mr-5"><a class="js-link text-beige-lightest lg:text-green hover:text-green lg:hover:text-dark" href="#products" aria-label="Zu den Produkten" title="Zu den Produkten">Produkte</a></li>
+              <li class="mb-5 lowercase lg:mb-0 lg:mr-5"><a class="js-link text-beige-lightest lg:text-green hover:text-green lg:hover:text-dark" href="#philosophy" aria-label="Zur Philosophie" title="Zur Philosophie">Philosophie</a></li>
+              <li class="lowercase"><a class="js-link text-beige-lightest lg:text-green hover:text-green lg:hover:text-dark" href="#contact" aria-label="Zum Kontakt" title="Zum Kontakt">Kontakt</a></li>
+            </ul>
+          </div>
+        </nav>
+        <ul class="hidden lg:flex lg:items-center lg:justify-end lg:col-span-2 lg:grid-cols-4 lg:row-start-1 lg:mb-1">
+          <li class="ml-5 transition-all duration-300 ease-in-out transform hover:scale-105 hover:opacity-70">
+            <a href="https://de-de.facebook.com/hsflensburg/" aria-label="Zu unserer Facebook-Seite" title="Zu unserer Facebook-Seite" class="block h-4">
+              <p class="visually-hidden">Besuchen Sie uns auf Facebook</p>
+              <svg width="7" height="14" viewBox="0 0 7 14">
+                <g>
+                  <g>
+                    <path d="M333.775,7253v-6.3h1.913l.312-2.8h-2.225v-1.364c0-.721.018-1.436,1.026-1.436h1.02v-2a11.323,11.323,0,0,0-1.763-.1c-1.852,0-3.012,1.16-3.012,3.291v1.61H329v2.8h2.046v6.3Z" transform="translate(-329 -7239)" fill="#b3a898" fill-rule="evenodd"/>
+                  </g>
+                </g>
+              </svg> 
+            </a>
+          </li>
+          <li class="ml-5 transition-all duration-300 ease-in-out transform hover:scale-105 hover:opacity-70">
+            <a href="https://www.instagram.com/hochschuleflensburg/?hl=de" aria-label="Zu unserer Instagram-Seite" title="Zu unserer Instagram-Seite" class="block h-4">
+              <p class="visually-hidden">Besuchen Sie uns auf Instagram</p>
+              <svg width="15.2" height="15.2" viewBox="0 0 15.2 15.2">
+                <g transform="translate(-1.4 -1.4)">
+                  <rect width="14" height="14" rx="5" transform="translate(2 2)" fill="none" stroke="#b3a898" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+                  <path d="M14.8,10.854a3.4,3.4,0,1,1-2.861-2.861A3.4,3.4,0,0,1,14.8,10.854Z" transform="translate(-2.623 -2.585)" fill="none" stroke="#b3a898" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+                  <line transform="translate(12.527 5.056)" fill="none" stroke="#b3a898" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+                </g>
+              </svg> 
+            </a>
+          </li>
+          <li class="ml-5 transition-all duration-300 ease-in-out transform hover:scale-105 hover:opacity-70">
+            <a href="tel:012345678" aria-label="Rufen Sie uns an" title="Rufen Sie uns an" class="block h-4">
+              <p class="visually-hidden">Rufen Sie uns an!</p>
+              <svg width="13.999" height="14" viewBox="0 0 13.999 14">
+                <g transform="translate(-0.01)">
+                  <path data-name="Pfad 1" d="M13.979,10.847q-.059-.179-.756-.527-.189-.11-.537-.3t-.631-.348q-.284-.159-.532-.308-.04-.03-.249-.174a2.794,2.794,0,0,0-.353-.214.651.651,0,0,0-.283-.069.825.825,0,0,0-.5.283,4.841,4.841,0,0,0-.547.617,5.994,5.994,0,0,1-.527.616.758.758,0,0,1-.457.283.676.676,0,0,1-.224-.05c-.089-.033-.157-.062-.2-.084s-.126-.07-.238-.139-.176-.108-.189-.114a10.449,10.449,0,0,1-2.337-1.73,10.443,10.443,0,0,1-1.73-2.337q-.01-.02-.114-.189t-.139-.239a2.155,2.155,0,0,1-.084-.2A.673.673,0,0,1,3.3,5.4a.758.758,0,0,1,.283-.457A5.988,5.988,0,0,1,4.2,4.414a4.839,4.839,0,0,0,.616-.547.825.825,0,0,0,.283-.5.649.649,0,0,0-.07-.283,2.764,2.764,0,0,0-.214-.353q-.144-.209-.174-.249-.149-.248-.308-.532t-.348-.631Q3.8.974,3.689.785,3.341.09,3.162.03A.557.557,0,0,0,2.953,0a3.276,3.276,0,0,0-.7.1,3.937,3.937,0,0,0-.681.209A2.665,2.665,0,0,0,.517,1.521,3.855,3.855,0,0,0,.01,3.37a3.84,3.84,0,0,0,.035.522,4.29,4.29,0,0,0,.124.572q.089.318.144.472t.2.552q.149.4.179.487a9.006,9.006,0,0,0,.825,1.74,14.743,14.743,0,0,0,2.143,2.63,14.749,14.749,0,0,0,2.63,2.143,9.02,9.02,0,0,0,1.74.825q.09.03.487.179t.552.2q.154.055.472.144a4.328,4.328,0,0,0,.572.125,3.688,3.688,0,0,0,2.371-.472A2.664,2.664,0,0,0,13.7,12.439a3.916,3.916,0,0,0,.209-.681,3.269,3.269,0,0,0,.1-.7A.554.554,0,0,0,13.979,10.847Z" transform="translate(0 0)" fill="#b3a898"/>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="ml-5 transition-all duration-300 ease-in-out transform hover:scale-105 hover:opacity-70">
+            <a href="mailto:diesistkeine@existenteAdresse.com" aria-label="Schreiben Sie uns eine Mail" title="Schreiben Sie uns eine Mail" class="block h-4">
+              <p class="visually-hidden">Schreiben Sie uns eine Mail!</p>
+              <svg width="16.696" height="13.2" viewBox="0 0 16.696 13.2">
+                <g transform="translate(-1.152 -3.4)">
+                  <path d="M3.5,4h12A1.5,1.5,0,0,1,17,5.5v9A1.5,1.5,0,0,1,15.5,16H3.5A1.5,1.5,0,0,1,2,14.5v-9A1.5,1.5,0,0,1,3.5,4Z" fill="none" stroke="#b3a898" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+                  <path d="M17,6,9.5,13,2,6" fill="none" stroke="#b3a898" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+                </g>
+              </svg>         
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <!-- script -->
     <script rel="script" async src="/build/site.js" defer></script>
   </body>
