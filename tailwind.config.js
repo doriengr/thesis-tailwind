@@ -52,6 +52,7 @@ module.exports = {
       spacing: {
         '16.6/100': '6%',
         '8.3/100': '12%',
+        '3/10': '30%',
       },
       gridColumn: {
         'span-16': 'span 16 / span 16',
@@ -62,6 +63,9 @@ module.exports = {
       maxHeight: {
         '112': '28rem',
         '152': '38rem',
+      },
+      minHeight: {
+        '384': '24rem',
       },
       zIndex: {
         '-1': '-1',
