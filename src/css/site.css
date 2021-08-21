@@ -1,16 +1,11 @@
 /* Add fonts */
-@font-face {
-  font-display: swap;
-  font-family: ivypresto-display, serif;
-  font-style: normal;
-  font-weight: 100;
-}
+@import url('https://use.typekit.net/nnh0eap.css');
 
 @font-face {
   font-display: swap;
   font-family: ivypresto-display, serif;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 @font-face {
@@ -39,7 +34,6 @@
   font-family: montserrat-light, serif;
   font-style: normal;
   font-weight: 100;
-  src: url('/src/fonts/Montserrat-Light.ttf');
 }
 
 @font-face {
@@ -47,7 +41,6 @@
   font-family: montserrat-medium, serif;
   font-style: normal;
   font-weight: 500;
-  src: url('/src/fonts/Montserrat-Medium.ttf');
 }
 
 /* Smooth scrolling */
@@ -59,4 +52,21 @@ html {
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
+}
+
+/* Custom grid */
+.css-custom-grid {
+  display: grid;
+  grid-template-columns: 6% 20% 5.5% 18.5% 6% 32% 6% 6%;
+  grid-template-rows: auto;
+}
+
+.css-writing-mode {
+  writing-mode: vertical-rl;
+}
+
+@media (min-width: 1024px) {
+  .css-writing-mode {
+    writing-mode: inherit;
+  }
 }

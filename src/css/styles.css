@@ -589,6 +589,11 @@ button{
 	overflow: hidden;
 	white-space: nowrap;
 }
+.font-montserrat-standard{
+	font-family: montserrat-medium, serif;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+}
 .font-montserrat-wide{
 	font-family: montserrat-medium, serif;
 	text-transform: uppercase;
@@ -624,9 +629,49 @@ button{
 .z-40{
 	z-index: 40;
 }
+.col-start-4{
+	grid-column-start: 4;
+}
+.col-start-7{
+	grid-column-start: 7;
+}
+.col-start-2{
+	grid-column-start: 2;
+}
+.col-start-1{
+	grid-column-start: 1;
+}
+.col-start-3{
+	grid-column-start: 3;
+}
+.col-end-8{
+	grid-column-end: 8;
+}
+.col-end-3{
+	grid-column-end: 3;
+}
+.col-end-6{
+	grid-column-end: 6;
+}
+.row-start-2{
+	grid-row-start: 2;
+}
+.row-start-1{
+	grid-row-start: 1;
+}
+.row-end-3{
+	grid-row-end: 3;
+}
+.row-end-2{
+	grid-row-end: 2;
+}
 .mx-auto{
 	margin-left: auto;
 	margin-right: auto;
+}
+.my-20{
+	margin-top: 5rem;
+	margin-bottom: 5rem;
 }
 .mb-1{
 	margin-bottom: 0.25rem;
@@ -642,6 +687,12 @@ button{
 }
 .ml-5{
 	margin-left: 1.25rem;
+}
+.mt-12{
+	margin-top: 3rem;
+}
+.mt-20{
+	margin-top: 5rem;
 }
 .block{
 	display: block;
@@ -673,6 +724,9 @@ button{
 .h-4{
 	height: 1rem;
 }
+.h-24{
+	height: 6rem;
+}
 .w-screen{
 	width: 100vw;
 }
@@ -690,6 +744,9 @@ button{
 }
 .w-full{
 	width: 100%;
+}
+.max-w-md{
+	max-width: 28rem;
 }
 .rotate-180{
 	--tw-rotate: 180deg;
@@ -712,6 +769,18 @@ button{
 }
 .justify-between{
 	justify-content: space-between;
+}
+.self-start{
+	align-self: flex-start;
+}
+.self-center{
+	align-self: center;
+}
+.justify-self-end{
+	justify-self: end;
+}
+.whitespace-nowrap{
+	white-space: nowrap;
 }
 .border-b{
 	border-bottom-width: 1px;
@@ -792,6 +861,10 @@ button{
 	--tw-text-opacity: 1;
 	color: rgba(250, 249, 247, var(--tw-text-opacity));
 }
+.text-red{
+	--tw-text-opacity: 1;
+	color: rgba(157, 136, 122, var(--tw-text-opacity));
+}
 .opacity-70{
 	opacity: 0.7;
 }
@@ -825,10 +898,64 @@ button{
 	--tw-bg-opacity: 1;
 	background-color: rgba(142, 139, 124, var(--tw-bg-opacity));
 }
+@media (min-width: 640px){
+	.sm\:col-start-4{
+		grid-column-start: 4;
+	}
+	.sm\:col-end-7{
+		grid-column-end: 7;
+	}
+	.sm\:row-start-2{
+		grid-row-start: 2;
+	}
+	.sm\:row-start-4{
+		grid-row-start: 4;
+	}
+	.sm\:row-start-3{
+		grid-row-start: 3;
+	}
+	.sm\:row-end-3{
+		grid-row-end: 3;
+	}
+	.sm\:row-end-5{
+		grid-row-end: 5;
+	}
+	.sm\:row-end-4{
+		grid-row-end: 4;
+	}
+	.sm\:mb-6{
+		margin-bottom: 1.5rem;
+	}
+	.sm\:ml-28{
+		margin-left: 7rem;
+	}
+	.sm\:mt-0{
+		margin-top: 0px;
+	}
+	.sm\:h-40{
+		height: 10rem;
+	}
+	.sm\:w-3\/4{
+		width: 75%;
+	}
+	.sm\:self-start{
+		align-self: flex-start;
+	}
+}
 @media (min-width: 768px){
+	.md\:my-40{
+		margin-top: 10rem;
+		margin-bottom: 10rem;
+	}
+	.md\:mt-16{
+		margin-top: 4rem;
+	}
 	.md\:py-6{
 		padding-top: 1.5rem;
 		padding-bottom: 1.5rem;
+	}
+	.md\:pt-6{
+		padding-top: 1.5rem;
 	}
 }
 @media (min-width: 1024px){
@@ -847,8 +974,41 @@ button{
 	.lg\:col-start-1{
 		grid-column-start: 1;
 	}
+	.lg\:col-start-4{
+		grid-column-start: 4;
+	}
+	.lg\:col-start-2{
+		grid-column-start: 2;
+	}
+	.lg\:col-start-7{
+		grid-column-start: 7;
+	}
+	.lg\:col-end-7{
+		grid-column-end: 7;
+	}
+	.lg\:col-end-5{
+		grid-column-end: 5;
+	}
+	.lg\:col-end-3{
+		grid-column-end: 3;
+	}
+	.lg\:col-end-9{
+		grid-column-end: 9;
+	}
 	.lg\:row-start-1{
 		grid-row-start: 1;
+	}
+	.lg\:row-start-5{
+		grid-row-start: 5;
+	}
+	.lg\:row-start-3{
+		grid-row-start: 3;
+	}
+	.lg\:row-end-5{
+		grid-row-end: 5;
+	}
+	.lg\:row-end-6{
+		grid-row-end: 6;
 	}
 	.lg\:mb-0{
 		margin-bottom: 0px;
@@ -858,6 +1018,18 @@ button{
 	}
 	.lg\:mb-1{
 		margin-bottom: 0.25rem;
+	}
+	.lg\:mt-24{
+		margin-top: 6rem;
+	}
+	.lg\:mb-6{
+		margin-bottom: 1.5rem;
+	}
+	.lg\:ml-28{
+		margin-left: 7rem;
+	}
+	.lg\:mr-6{
+		margin-right: 1.5rem;
 	}
 	.lg\:block{
 		display: block;
@@ -877,8 +1049,21 @@ button{
 	.lg\:h-auto{
 		height: auto;
 	}
+	.lg\:h-52{
+		height: 13rem;
+	}
+	.lg\:h-3\/4{
+		height: 75%;
+	}
 	.lg\:w-auto{
 		width: auto;
+	}
+	.lg\:max-w-2xl{
+		max-width: 42rem;
+	}
+	.lg\:rotate-0{
+		--tw-rotate: 0deg;
+		transform: var(--tw-transform);
 	}
 	.lg\:grid-cols-5{
 		grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -903,6 +1088,9 @@ button{
 	}
 	.lg\:self-end{
 		align-self: flex-end;
+	}
+	.lg\:justify-self-start{
+		justify-self: start;
 	}
 	.lg\:bg-opacity-0{
 		--tw-bg-opacity: 0;
@@ -936,5 +1124,10 @@ button{
 	.lg\:hover\:text-dark:hover{
 		--tw-text-opacity: 1;
 		color: rgba(95, 96, 83, var(--tw-text-opacity));
+	}
+}
+@media (min-width: 1280px){
+	.xl\:h-72{
+		height: 18rem;
 	}
 }
