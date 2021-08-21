@@ -61,6 +61,7 @@ html {
   grid-template-rows: auto;
 }
 
+/* Add writing mode */
 .css-writing-mode {
   writing-mode: vertical-rl;
 }
@@ -68,5 +69,12 @@ html {
 @media (min-width: 1024px) {
   .css-writing-mode {
     writing-mode: inherit;
+  }
+}
+
+/* Add clip path to images */
+@media (min-width: 1024px) {
+  .css-clip-path {
+    clip-path: url('#clip-path-full');
   }
 }

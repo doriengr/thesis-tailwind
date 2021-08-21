@@ -169,7 +169,30 @@
           <img src="src/images/falvour-earth-roll-seletction-w-250.jpg" alt="Flavour Eath · Unsere Auswahl an Leckereien">
         </picture>
       </header>
+      <!-- origin of products -->
+      <section class="css-custom-grid mx-auto mb-20 md:mb-24 lg:mb-28 2xl:mb-40 max-h-152">
+        <div class="col-start-2 col-end-8 row-start-2 row-end-3 lg:col-end-5 lg:row-start-1 lg:row-end-2 lg:self-center lg:ml-8 lg:mt-14">
+          <h2 class="text-red">Inspiriert von der Region!</h2>
+          <p>All unsere Produkte werden aus tierfreien und regionalen Produkten hergestellt. Dabei achten wir nicht nur auf kurze Transportwege,
+             sondern auch auf faire Arbeitsbedingungen und Qualität. Somit garantieren wir für unseren einzigartigen Geschmack und Fairness für alle!</p>
+        </div>
+        <picture class="col-start-1 col-end-7 row-start-1 row-end-2 h-40 mb-6 w-full sm:h-60 lg:col-start-6 lg:col-end-7 lg:h-4/5 lg:mb-0">
+          <source sizes="472px" media="(max-width: 500px)" srcset="src/images/flavour-earth-corn-w-472.jpg 472w">
+          <source sizes="615px"  media="(max-width: 700px)" srcset="src/images/flavour-earth-corn-w-615.jpg 615w">
+          <source sizes="753px" media="(max-width: 1024px)" srcset="src/images/flavour-earth-corn-w-753.jpg 753w">
+          <source sizes="472px" media="(min-width: 1024px)" srcset="src/images/flavour-earth-corn-w-472.jpg 472w">
+          <img class="css-clip-path" src="src/images/flavour-earth-corn-w-472.jpg" alt="Flavour Eath · Regionales Getreide">
+        </picture>
+      </section>
     </main>
+    <!-- clip-path -->
+    <svg width="0" height="0" class="clippath">
+      <defs>
+          <clipPath id="clip-path-full" clipPathUnits="objectBoundingBox">
+            <path d="M0,0v0.5C0,0.8,0.2,1,0.5,1c0.3,0,0.5-0.2,0.5-0.5V0H0z"></path>
+          </clipPath>
+      </defs>
+    </svg>
     <!-- script -->
     <script rel="script" async src="/build/site.js" defer></script>
   </body>
