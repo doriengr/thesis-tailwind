@@ -1,0 +1,56 @@
+/* Add fonts */
+@font-face {
+  font-display: swap;
+  font-family: ivypresto-display, serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: ivypresto-display, serif;
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: ivypresto-display, serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: adobe-caslon-pro, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: adobe-caslon-pro, serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: montserrat-light, serif;
+  font-style: normal;
+  font-weight: 100;
+  src: url('/src/fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: montserrat-medium, serif;
+  font-style: normal;
+  font-weight: 500;
+  src: url('/src/fonts/Montserrat-Medium.ttf');
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}

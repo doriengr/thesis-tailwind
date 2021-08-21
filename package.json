@@ -1,0 +1,37 @@
+{
+  "name": "tailwind-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm-run-all css-tailwind css-minify js-minify",
+    "css-tailwind": "postcss src/css/tailwind.css -o src/css/styles.css",
+    "server": "serve --listen 3000",
+    "css-minify": "minify src/css/styles.css > build/styles.css",
+    "js-minify": "minify src/js/*.js > build/site.js",
+    "watch": "nodemon -e html,css -x \"npm run build\"",
+    "start": "npm-run-all --parallel watch server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doriengr/tailwind-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doriengr/tailwind-test/issues"
+  },
+  "homepage": "https://github.com/doriengr/tailwind-test#readme",
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "minify": "^7.0.2",
+    "nodemon": "^2.0.12",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "serve": "^12.0.0",
+    "tailwindcss": "^2.2.7"
+  }
+}
