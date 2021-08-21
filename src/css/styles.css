@@ -747,6 +747,9 @@ button{
 .mt-0{
 	margin-top: 0px;
 }
+.ml-4{
+	margin-left: 1rem;
+}
 .block{
 	display: block;
 }
@@ -816,6 +819,9 @@ button{
 .w-full{
 	width: 100%;
 }
+.w-32{
+	width: 8rem;
+}
 .max-w-md{
 	max-width: 28rem;
 }
@@ -840,6 +846,9 @@ button{
 .grid-cols-1{
 	grid-template-columns: repeat(1, minmax(0, 1fr));
 }
+.grid-cols-2{
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 .flex-row{
 	flex-direction: row;
 }
@@ -857,6 +866,13 @@ button{
 }
 .gap-y-6{
 	row-gap: 1.5rem;
+}
+.gap-x-3{
+	-moz-column-gap: 0.75rem;
+	     column-gap: 0.75rem;
+}
+.gap-y-5{
+	row-gap: 1.25rem;
 }
 .self-start{
 	align-self: flex-start;
@@ -903,6 +919,10 @@ button{
 	--tw-bg-opacity: 1;
 	background-color: rgba(231, 228, 219, var(--tw-bg-opacity));
 }
+.bg-green{
+	--tw-bg-opacity: 1;
+	background-color: rgba(142, 139, 124, var(--tw-bg-opacity));
+}
 .bg-opacity-80{
 	--tw-bg-opacity: 0.8;
 }
@@ -936,8 +956,20 @@ button{
 .pb-6{
 	padding-bottom: 1.5rem;
 }
+.pt-14{
+	padding-top: 3.5rem;
+}
+.pb-10{
+	padding-bottom: 2.5rem;
+}
+.text-left{
+	text-align: left;
+}
 .text-center{
 	text-align: center;
+}
+.text-right{
+	text-align: right;
 }
 .font-adobe-caslon-pro{
 	font-family: adobe-caslon-pro, serif;
@@ -1025,6 +1057,10 @@ button{
 	--tw-text-opacity: 1;
 	color: rgba(250, 249, 247, var(--tw-text-opacity));
 }
+.hover\:text-dark:hover{
+	--tw-text-opacity: 1;
+	color: rgba(95, 96, 83, var(--tw-text-opacity));
+}
 .hover\:opacity-60:hover{
 	opacity: 0.6;
 }
@@ -1060,6 +1096,10 @@ button{
 	.sm\:row-end-4{
 		grid-row-end: 4;
 	}
+	.sm\:mx-auto{
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.sm\:mb-6{
 		margin-bottom: 1.5rem;
 	}
@@ -1068,6 +1108,12 @@ button{
 	}
 	.sm\:mt-0{
 		margin-top: 0px;
+	}
+	.sm\:mt-6{
+		margin-top: 1.5rem;
+	}
+	.sm\:flex{
+		display: flex;
 	}
 	.sm\:h-40{
 		height: 10rem;
@@ -1081,8 +1127,23 @@ button{
 	.sm\:w-3\/4{
 		width: 75%;
 	}
+	.sm\:max-w-md{
+		max-width: 28rem;
+	}
+	.sm\:flex-row{
+		flex-direction: row;
+	}
+	.sm\:items-center{
+		align-items: center;
+	}
+	.sm\:justify-center{
+		justify-content: center;
+	}
 	.sm\:self-start{
 		align-self: flex-start;
+	}
+	.sm\:text-left{
+		text-align: left;
 	}
 }
 @media (min-width: 768px){
@@ -1185,6 +1246,10 @@ button{
 	.lg\:my-0{
 		margin-top: 0px;
 		margin-bottom: 0px;
+	}
+	.lg\:mx-0{
+		margin-left: 0px;
+		margin-right: 0px;
 	}
 	.lg\:mb-0{
 		margin-bottom: 0px;
@@ -1312,6 +1377,9 @@ button{
 	}
 	.lg\:justify-end{
 		justify-content: flex-end;
+	}
+	.lg\:justify-between{
+		justify-content: space-between;
 	}
 	.lg\:gap-y-0{
 		row-gap: 0px;
