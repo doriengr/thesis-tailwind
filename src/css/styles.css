@@ -605,6 +605,13 @@ button{
 	text-transform: uppercase;
 	letter-spacing: 0.15em;
 }
+.font-ivypresto-standard{
+	font-family: ivypresto-display, serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	line-height: 1.5;
+	letter-spacing: 0.05em;
+}
 .fixed{
 	position: fixed;
 }
@@ -817,6 +824,9 @@ button{
 	max-width: -moz-max-content;
 	max-width: max-content;
 }
+.max-w-2xl{
+	max-width: 42rem;
+}
 .rotate-180{
 	--tw-rotate: 180deg;
 	transform: var(--tw-transform);
@@ -935,9 +945,6 @@ button{
 .font-montserrat-medium{
 	font-family: montserrat-medium, serif;
 }
-.font-ivypresto-display{
-	font-family: ivypresto-display, serif;
-}
 .text-base{
 	font-size: 1rem;
 }
@@ -950,8 +957,8 @@ button{
 .text-small{
 	font-size: 0.875rem;
 }
-.font-thin{
-	font-weight: 100;
+.text-largest{
+	font-size: 1.875rem;
 }
 .uppercase{
 	text-transform: uppercase;
@@ -962,14 +969,14 @@ button{
 .leading-standard{
 	line-height: 1.5;
 }
+.leading-tight{
+	line-height: 1.2;
+}
 .tracking-standard{
 	letter-spacing: 0.12em;
 }
 .tracking-wide{
 	letter-spacing: 0.15em;
-}
-.tracking-tight{
-	letter-spacing: 0.05em;
 }
 .text-dark{
 	--tw-text-opacity: 1;
@@ -1227,6 +1234,9 @@ button{
 	.lg\:mt-16{
 		margin-top: 4rem;
 	}
+	.lg\:mt-28{
+		margin-top: 7rem;
+	}
 	.lg\:block{
 		display: block;
 	}
@@ -1361,6 +1371,9 @@ button{
 	.lg\:text-larger{
 		font-size: 1.25rem;
 	}
+	.lg\:text-huger{
+		font-size: 3.125rem;
+	}
 	.lg\:leading-none{
 		line-height: 0;
 	}
@@ -1394,6 +1407,9 @@ button{
 	}
 	.xl\:h-112{
 		height: 28rem;
+	}
+	.xl\:h-96{
+		height: 24rem;
 	}
 }
 @media (min-width: 1536px){

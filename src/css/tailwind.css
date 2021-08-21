@@ -40,4 +40,7 @@
   .font-montserrat-wide {
     @apply font-montserrat-medium tracking-wide uppercase;
   }
+  .font-ivypresto-standard {
+    @apply font-ivypresto-display font-thin tracking-tight leading-standard uppercase;
+  }
 }
