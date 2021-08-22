@@ -48,6 +48,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Change color of selected background */
+::selection {
+  background-color: #e7e4db;
+}
+
 /* Visually hide elements for screenreader */
 .visually-hidden {
   clip: rect(0 0 0 0);
@@ -76,5 +81,63 @@ html {
 @media (min-width: 1024px) {
   .css-clip-path {
     clip-path: url('#clip-path-full');
+  }
+}
+
+/* Add line as before-pseudoclass */
+@media (min-width: 640px) {
+  .css-line-before-hidden::before {
+    border-bottom: 1px solid #9d887a;
+    content: '';
+    margin-right: 0.5em;
+    width: 100%;
+  }
+}
+
+.css-line-before::before {
+  border-bottom: 1px solid #9d887a;
+  content: '';
+  margin-right: 0.5em;
+  width: 100%;
+}
+
+/* Add elements after pseudoclass */
+.js-list-label {
+  position: relative;
+}
+
+.js-list-label::after {
+  background-image: url('/src/images/arrow-down.svg');
+  background-repeat: no-repeat;
+  content: '';
+  height: 0.625rem;
+  position: absolute;
+  right: 0;
+  top: 40%;
+  transform: rotate(180deg);
+  width: 1.25rem;
+}
+
+.js-list-label--rotate::after {
+  transform: rotate(0deg);
+}
+
+@media (min-width: 1024px) {
+  .js-list-label {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .js-list-label::after {
+    background-image: none;
+    border-bottom: 1px solid #9d887a;
+    height: auto;
+    margin-left: 1em;
+    position: inherit;
+    transform: none;
+    width: 100%;
   }
 }

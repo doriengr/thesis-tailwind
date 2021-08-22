@@ -12,6 +12,7 @@
       } else {
         for (let i = 0; i < sublists.length; i++ ) {
           sublists[i].classList.add('hidden');
+          labels[i].classList.add('js-list-label--rotate');
         }
       }
     });
@@ -20,7 +21,7 @@
   function toggleNavigation(index) {
     if (window.matchMedia('(max-width: 1024px)').matches) {
       sublists[index].classList.toggle('hidden');
-      labels[index].classList.toggle('products__list-label--rotate');
+      labels[index].classList.toggle('js-list-label--rotate');
     } else {
       return;
     }
@@ -38,7 +39,7 @@
     }
     for (let i = 0; i < sublists.length; i++ ) {
       sublists[i].classList.add('hidden');
-      labels[i].classList.add('products__list-label--rotate');
+      labels[i].classList.add('js-list-label--rotate');
     }
   }  
 
