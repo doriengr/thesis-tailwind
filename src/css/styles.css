@@ -956,6 +956,9 @@ button{
 .pb-6{
 	padding-bottom: 1.5rem;
 }
+.pt-5{
+	padding-top: 1.25rem;
+}
 .pt-14{
 	padding-top: 3.5rem;
 }
@@ -1141,6 +1144,9 @@ button{
 	}
 	.sm\:self-start{
 		align-self: flex-start;
+	}
+	.sm\:pt-10{
+		padding-top: 2.5rem;
 	}
 	.sm\:text-left{
 		text-align: left;

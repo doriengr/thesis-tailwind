@@ -340,3 +340,25 @@ html {
     z-index: -1;
   }
 }
+
+#footer::before {
+  background-image: url('/src/images/pattern-small.svg');
+  background-repeat: no-repeat;
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: -1.25rem;
+  width: 100%;
+  z-index: -1;
+}
+
+@media (min-width: 1024px) {
+  #footer::before {
+    background-image: url('/src/images/pattern-large.svg');
+    background-position-x: right;
+    max-width: 55rem;
+    right: 0;
+    top: 0;
+    width: 85%;
+  }
+}
