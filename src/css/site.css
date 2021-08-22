@@ -184,3 +184,63 @@ html {
   top: -1.5rem;
   width: 100%;
 }
+
+.css-cirlce-bottom-right::after {
+  border: 1px solid #b3a898;
+  border-radius: 100%;
+  content: '';
+  height: 5rem;
+  width: 5rem;
+  z-index: 40;
+  bottom: -2.5rem;
+  position: absolute;
+  right: -2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .css-cirlce-bottom-right::after {
+    height: 12.5rem;
+    width: 12.5rem;
+    bottom: -6.25rem;
+    right: -6.25rem;
+  }
+}
+
+.css-circle-top-right::after {
+  border: 1px solid #b3a898;
+  border-radius: 100%;
+  content: '';
+  height: 5rem;
+  width: 5rem;
+  z-index: 40;
+  right: -2.5rem;
+  position: absolute;
+  top: -2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .css-circle-top-right::after {
+    display: none;
+  }
+}
+
+.css-circle-top-left::after {
+  border: 1px solid #b3a898;
+  border-radius: 100%;
+  content: '';
+  height: 5rem;
+  width: 5rem;
+  z-index: 40;
+  left: -2.5rem;
+  position: absolute;
+  top: -2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .css-circle-top-left::after {
+    height: 12.5rem;
+    width: 12.5rem;
+    left: -6.25rem;
+    top: -6.25rem;
+  }
+}
