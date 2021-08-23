@@ -43,4 +43,7 @@
   .font-ivypresto-standard {
     @apply font-ivypresto-display font-thin tracking-tight leading-standard uppercase;
   }
+  .circle {
+    @apply after:border after:border-brown after:h-20 after:w-20 after:z-40 after:rounded-full after:absolute lg:after:w-48 lg:after:h-48;
+  }
 }

@@ -48,11 +48,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Change color of selected background */
-::selection {
-  background-color: #e7e4db;
-}
-
 /* Visually hide elements for screenreader */
 .visually-hidden {
   clip: rect(0 0 0 0);
@@ -84,23 +79,6 @@ html {
   }
 }
 
-/* Add line as before-pseudoclass */
-@media (min-width: 640px) {
-  .css-line-before-hidden::before {
-    border-bottom: 1px solid #9d887a;
-    content: '';
-    margin-right: 0.5em;
-    width: 100%;
-  }
-}
-
-.css-line-before::before {
-  border-bottom: 1px solid #9d887a;
-  content: '';
-  margin-right: 0.5em;
-  width: 100%;
-}
-
 /* Add elements after pseudoclass */
 .js-list-label {
   position: relative;
@@ -108,14 +86,8 @@ html {
 
 .js-list-label::after {
   background-image: url('/src/images/arrow-down.svg');
-  background-repeat: no-repeat;
-  content: '';
   height: 0.625rem;
-  position: absolute;
-  right: 0;
-  top: 40%;
   transform: rotate(180deg);
-  width: 1.25rem;
 }
 
 .js-list-label--rotate::after {
@@ -123,242 +95,18 @@ html {
 }
 
 @media (min-width: 1024px) {
-  .js-list-label {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-@media (min-width: 1024px) {
   .js-list-label::after {
     background-image: none;
-    border-bottom: 1px solid #9d887a;
-    height: auto;
-    margin-left: 1em;
-    position: inherit;
-    transform: none;
-    width: 100%;
-  }
-}
-
-/* Add line on top of image */
-@media (min-width: 1024px) {
-  .css-line-top::before {
-    background-color: #9d887a;
-    content: '';
-    height: 1.5px;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-  }
-}
-
-/* Add line to hero description */
-.css-line-before-small::before {
-  background-color: #b3a898;
-  content: '';
-  height: 1px;
-  position: absolute;
-  top: -1.5rem;
-  width: 6.25rem;
-}
-
-@media (min-width: 640px) {
-  .css-line-before-small::before {
-    left: -7.5rem;
-    top: 0.3rem;
-  }
-}
-
-/* Add line to hero usp */
-.css-line-top::before {
-  background-color: #b3a898;
-  content: '';
-  height: 1px;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: -1.5rem;
-  width: 100%;
-}
-
-.css-cirlce-bottom-right::after {
-  border: 1px solid #b3a898;
-  border-radius: 100%;
-  content: '';
-  height: 5rem;
-  width: 5rem;
-  z-index: 40;
-  bottom: -2.5rem;
-  position: absolute;
-  right: -2.5rem;
-}
-
-@media (min-width: 1024px) {
-  .css-cirlce-bottom-right::after {
-    height: 12.5rem;
-    width: 12.5rem;
-    bottom: -6.25rem;
-    right: -6.25rem;
-  }
-}
-
-.css-circle-top-right::after {
-  border: 1px solid #b3a898;
-  border-radius: 100%;
-  content: '';
-  height: 5rem;
-  width: 5rem;
-  z-index: 40;
-  right: -2.5rem;
-  position: absolute;
-  top: -2.5rem;
-}
-
-@media (min-width: 1024px) {
-  .css-circle-top-right::after {
-    display: none;
-  }
-}
-
-.css-circle-top-left::after {
-  border: 1px solid #b3a898;
-  border-radius: 100%;
-  content: '';
-  height: 5rem;
-  width: 5rem;
-  z-index: 40;
-  left: -2.5rem;
-  position: absolute;
-  top: -2.5rem;
-}
-
-@media (min-width: 1024px) {
-  .css-circle-top-left::after {
-    height: 12.5rem;
-    width: 12.5rem;
-    left: -6.25rem;
-    top: -6.25rem;
-  }
-}
-
-/* Add backgrounds */
-#hero::after {
-  background-color: #e7e4db;
-  content: '';
-  grid-column: 1/5;
-  grid-row: 1/2;
-  height: 100%;
-  position: absolute;
-  top: 30%;
-  width: 70%;
-  z-index: -1;
-}
-
-@media (min-width: 640px) {
-  #hero::after {
-    grid-row: 1/4;
-    top: 15%;
-  }
-}
-
-@media (min-width: 1024px) {
-  #hero::after {
-    top: 20%;
-  }
-}
-
-@media (min-width: 1280px) {
-  #hero::after {
-    top: 30%;
-  }
-}
-
-#origin::after {
-  background-color: #e7e4db;
-  content: '';
-  grid-column: 7/9;
-  grid-row: 1/2;
-  height: 50%;
-  width: 100%;
-}
-
-@media (min-width: 1024px) {
-  #origin::after {
-    height: 40%;
-  }
-}
-
-#history::after {
-  background-color: #e7e4db;
-  content: '';
-  grid-column: 1/-1;
-  grid-row: 2/3;
-  height: 50%;
-  position: absolute;
-  top: 20%;
-  width: 100%;
-  z-index: -1;
-}
-
-@media (min-width: 640px) {
-  #history::after {
-    height: 75%;
-    top: 15%;
-  }
-}
-
-@media (min-width: 1024px) {
-  #history::after {
-    grid-column: 1/4;
-    grid-row: 2/4;
-    height: 55%;
-  }
-}
-
-@media (min-width: 1280px) {
-  #history::after {
-    grid-column: 1/5;
-    height: 65%;
-    width: 80%;
-  }
-}
-
-@media (min-width: 1024px) {
-  #products::after {
-    background-color: #e7e4db;
-    content: '';
-    grid-column: 1/-1;
-    grid-row: 2/3;
-    height: 20%;
-    position: absolute;
-    top: 7.5%;
-    width: 100%;
-    z-index: -1;
   }
 }
 
 #footer::before {
   background-image: url('/src/images/pattern-small.svg');
-  background-repeat: no-repeat;
-  content: '';
-  height: 100%;
-  position: absolute;
-  top: -1.25rem;
-  width: 100%;
-  z-index: -1;
 }
 
 @media (min-width: 1024px) {
   #footer::before {
     background-image: url('/src/images/pattern-large.svg');
     background-position-x: right;
-    max-width: 55rem;
-    right: 0;
-    top: 0;
-    width: 85%;
   }
 }
