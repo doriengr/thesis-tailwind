@@ -822,6 +822,9 @@ button{
 .w-32{
 	width: 8rem;
 }
+.max-w-screen-2xl{
+	max-width: 1536px;
+}
 .max-w-md{
 	max-width: 28rem;
 }
@@ -1502,5 +1505,9 @@ button{
 	}
 	.\32xl\:mb-40{
 		margin-bottom: 10rem;
+	}
+	.\32xl\:px-20{
+		padding-left: 5rem;
+		padding-right: 5rem;
 	}
 }

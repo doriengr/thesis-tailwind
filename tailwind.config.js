@@ -55,6 +55,9 @@ module.exports = {
         '8.3/100': '12%',
         '3/10': '30%',
       },
+      screen: {
+
+      },
       gridColumn: {
         'span-16': 'span 16 / span 16',
       },
