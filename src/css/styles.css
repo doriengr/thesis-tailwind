@@ -557,8 +557,9 @@ h3{
 h4{
 	width: 100%;
 	white-space: nowrap;
-	font-family: montserrat-medium, serif;
+	font-family: montserrat, serif;
 	font-size: 0.875rem;
+	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 0.12em;
 	--tw-text-opacity: 1;
@@ -613,12 +614,14 @@ button:active{
 	color: rgba(231, 228, 219, var(--tw-text-opacity));
 }
 .font-montserrat-standard{
-	font-family: montserrat-medium, serif;
+	font-family: montserrat, serif;
+	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 0.12em;
 }
 .font-montserrat-wide{
-	font-family: montserrat-medium, serif;
+	font-family: montserrat, serif;
+	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 0.15em;
 }
@@ -1035,8 +1038,8 @@ button:active{
 .font-adobe-caslon-pro{
 	font-family: adobe-caslon-pro, serif;
 }
-.font-montserrat-medium{
-	font-family: montserrat-medium, serif;
+.font-montserrat{
+	font-family: montserrat, serif;
 }
 .text-base{
 	font-size: 1rem;
@@ -1052,6 +1055,9 @@ button:active{
 }
 .text-largest{
 	font-size: 1.875rem;
+}
+.font-medium{
+	font-weight: 500;
 }
 .uppercase{
 	text-transform: uppercase;
