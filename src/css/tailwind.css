@@ -14,7 +14,7 @@
     @apply text-green font-ivypresto-display font-thin tracking-tight leading-tight uppercase text-large sm:text-larger md:text-largest lg:text-huge;
   }
   h4 {
-    @apply font-montserrat-medium tracking-standard uppercase text-red text-small whitespace-nowrap w-full;
+    @apply font-montserrat font-medium tracking-standard uppercase text-red text-small whitespace-nowrap w-full;
   }
   img {
     @apply h-full object-cover w-full;
