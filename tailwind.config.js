@@ -24,8 +24,7 @@ module.exports = {
     fontFamily: {
       'ivypresto-display': ['ivypresto-display', 'serif'],
       'adobe-caslon-pro': ['adobe-caslon-pro', 'serif'],
-      'montserrat-light': ['montserrat-light', 'serif'],
-      'montserrat-medium': ['montserrat-medium', 'serif'],
+      'montserrat': ['montserrat', 'serif'],
     },
     fontSize: {
       'smallest': '0.625rem',

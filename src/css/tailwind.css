@@ -29,10 +29,10 @@
 
 @layer components {
   .font-montserrat-standard {
-    @apply font-montserrat-medium tracking-standard uppercase;
+    @apply font-montserrat font-medium tracking-standard uppercase;
   }
   .font-montserrat-wide {
-    @apply font-montserrat-medium tracking-wide uppercase;
+    @apply font-montserrat font-medium tracking-wide uppercase;
   }
   .font-ivypresto-standard {
     @apply font-ivypresto-display font-thin tracking-tight leading-standard uppercase;
