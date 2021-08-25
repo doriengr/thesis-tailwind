@@ -53,12 +53,6 @@ button:focus {
   outline-color: #8e8b7c;
 }
 
-/* Visually hide elements for screenreader */
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-}
-
 /* Custom grid */
 .css-custom-grid {
   display: grid;

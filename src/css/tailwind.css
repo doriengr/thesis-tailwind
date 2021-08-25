@@ -28,9 +28,6 @@
 }
 
 @layer components {
-  .visually-hidden {
-    @apply h-0.5 overflow-hidden absolute whitespace-nowrap w-0.5;
-  }
   .font-montserrat-standard {
     @apply font-montserrat-medium tracking-standard uppercase;
   }
