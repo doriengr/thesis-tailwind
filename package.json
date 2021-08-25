@@ -10,7 +10,7 @@
     "css-minify": "minify src/css/styles.css > build/styles.css",
     "js-minify": "minify src/js/*.js > build/site.js",
     "watch": "nodemon -e html,css -x \"npm run build\"",
-    "start": "npm-run-all --parallel watch server",
+    "start": "npm-run-all --parallel watch server"
   },
   "repository": {
     "type": "git",

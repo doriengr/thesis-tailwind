@@ -1,48 +1,6 @@
 /* Add fonts */
 @import url('https://use.typekit.net/nnh0eap.css');
 
-@font-face {
-  font-display: swap;
-  font-family: ivypresto-display, serif;
-  font-style: normal;
-  font-weight: 100;
-}
-
-@font-face {
-  font-display: swap;
-  font-family: ivypresto-display, serif;
-  font-style: normal;
-  font-weight: 300;
-}
-
-@font-face {
-  font-display: swap;
-  font-family: adobe-caslon-pro, serif;
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-display: swap;
-  font-family: adobe-caslon-pro, serif;
-  font-style: normal;
-  font-weight: 700;
-}
-
-@font-face {
-  font-display: swap;
-  font-family: montserrat-light, serif;
-  font-style: normal;
-  font-weight: 100;
-}
-
-@font-face {
-  font-display: swap;
-  font-family: montserrat-medium, serif;
-  font-style: normal;
-  font-weight: 500;
-}
-
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;

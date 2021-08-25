@@ -579,6 +579,18 @@ a{
 	transition-duration: 300ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+a:hover{
+	--tw-text-opacity: 1;
+	color: rgba(142, 139, 124, var(--tw-text-opacity));
+}
+a:focus{
+	--tw-text-opacity: 1;
+	color: rgba(179, 168, 152, var(--tw-text-opacity));
+}
+a:active{
+	--tw-text-opacity: 1;
+	color: rgba(231, 228, 219, var(--tw-text-opacity));
+}
 button{
 	display: block;
 	cursor: pointer;
@@ -588,12 +600,17 @@ button{
 	transition-duration: 300ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.visually-hidden{
-	position: absolute;
-	height: 0.125rem;
-	width: 0.125rem;
-	overflow: hidden;
-	white-space: nowrap;
+button:hover{
+	--tw-text-opacity: 1;
+	color: rgba(142, 139, 124, var(--tw-text-opacity));
+}
+button:focus{
+	--tw-text-opacity: 1;
+	color: rgba(179, 168, 152, var(--tw-text-opacity));
+}
+button:active{
+	--tw-text-opacity: 1;
+	color: rgba(231, 228, 219, var(--tw-text-opacity));
 }
 .font-montserrat-standard{
 	font-family: montserrat-medium, serif;
@@ -638,6 +655,17 @@ button{
 		content: "";
 		width: 12rem;
 	}
+}
+.sr-only{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
 }
 .fixed{
 	position: fixed;
