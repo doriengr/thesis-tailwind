@@ -55,15 +55,10 @@ module.exports = {
         '8.3/100': '12%',
         '3/10': '30%',
       },
-      gridColumn: {
-        'span-16': 'span 16 / span 16',
-      },
       height: {
         '112': '28rem',
-        '19/20': '95%',
       },
       maxHeight: {
-        '112': '28rem',
         '152': '38rem',
       },
       minHeight: {
