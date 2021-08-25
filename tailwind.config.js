@@ -1,5 +1,5 @@
 module.exports = {
-  mode: 'jit', //Using JustInTime Mode
+  mode: 'jit',
   purge: {
     content: [
       'index.html',
@@ -54,9 +54,6 @@ module.exports = {
         '16.6/100': '6%',
         '8.3/100': '12%',
         '3/10': '30%',
-      },
-      screen: {
-
       },
       gridColumn: {
         'span-16': 'span 16 / span 16',
