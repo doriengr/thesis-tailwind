@@ -82,12 +82,6 @@ button:focus {
 }
 
 #footer::before {
-  background-image: url('/src/images/pattern-small.svg');
-}
-
-@media (min-width: 1024px) {
-  #footer::before {
-    background-image: url('/src/images/pattern-large.svg');
-    background-position-x: right;
-  }
+  background-image: url('/src/images/icon-corn-green.svg');
+  background-size: 1.5rem;
 }
