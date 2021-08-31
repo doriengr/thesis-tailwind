@@ -760,11 +760,14 @@ button:active{
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
-.mb-1{
-	margin-bottom: 0.25rem;
-}
 .ml-auto{
 	margin-left: auto;
+}
+.mr-16\.6\/100{
+	margin-right: 6%;
+}
+.mr-16{
+	margin-right: 4rem;
 }
 .mb-12{
 	margin-bottom: 3rem;
@@ -823,12 +826,6 @@ button:active{
 .h-5{
 	height: 1.25rem;
 }
-.h-0\.5{
-	height: 0.125rem;
-}
-.h-0{
-	height: 0px;
-}
 .h-screen{
 	height: 100vh;
 }
@@ -861,15 +858,6 @@ button:active{
 }
 .w-screen{
 	width: 100vw;
-}
-.w-7{
-	width: 1.75rem;
-}
-.w-6{
-	width: 1.5rem;
-}
-.w-5{
-	width: 1.25rem;
 }
 .w-28{
 	width: 7rem;
@@ -968,10 +956,6 @@ button:active{
 	--tw-bg-opacity: 1;
 	background-color: rgba(250, 249, 247, var(--tw-bg-opacity));
 }
-.bg-red{
-	--tw-bg-opacity: 1;
-	background-color: rgba(157, 136, 122, var(--tw-bg-opacity));
-}
 .bg-brown{
 	--tw-bg-opacity: 1;
 	background-color: rgba(179, 168, 152, var(--tw-bg-opacity));
@@ -1013,6 +997,9 @@ button:active{
 }
 .pr-2{
 	padding-right: 0.5rem;
+}
+.pt-4{
+	padding-top: 1rem;
 }
 .pb-6{
 	padding-bottom: 1.5rem;
@@ -1320,10 +1307,6 @@ button:active{
 }
 .hover\:opacity-70:hover{
 	opacity: 0.7;
-}
-.group:hover .group-hover\:bg-green{
-	--tw-bg-opacity: 1;
-	background-color: rgba(142, 139, 124, var(--tw-bg-opacity));
 }
 @media (min-width: 640px){
 	.sm\:col-start-4{

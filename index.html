@@ -48,15 +48,27 @@
           </svg>
           <p class="font-montserrat-wide text-green text-smallest lg:text-smaller">Flavour Earth</p>
         </a>
-        <button aria-label="Öffne die Navigation" title="Öffne die Navigation" class="js-navigation-toggle relative z-50 group lg:hidden">
-          <div class="w-7 h-0.5 bg-red mb-1 ml-auto transition-all duration-300 ease-in-out transform group-hover:bg-green"></div>
-          <div class="w-6 h-0.5 bg-red mb-1 ml-auto transition-all duration-300 ease-in-out transform group-hover:bg-green"></div>
-          <div class="w-5 h-0.5 bg-red mb-1 ml-auto transition-all duration-300 ease-in-out transform group-hover:bg-green"></div>
+        <button aria-label="Öffne die Navigation" title="Öffne die Navigation" class="js-navigation-open lg:hidden">
+          <svg width="29.5" height="13.2" viewBox="0 0 29.5 13.2">
+            <g transform="translate(0 0.6)">
+              <line x2="29.5" fill="none" stroke="#9d887a" stroke-width="1.2"/>
+              <line x2="25.5" transform="translate(4 6)" fill="none" stroke="#9d887a" stroke-width="1.2"/>
+              <line x2="20.5" transform="translate(9 12)" fill="none" stroke="#9d887a" stroke-width="1.2"/>
+            </g>
+          </svg>
         </button>
         <!-- navigation -->
         <nav class="js-navigation h-screen w-screen bg-brown absolute inset-0 z-40 hidden lg:block lg:h-auto lg:bg-opacity-0 lg:relative lg:col-start-1 lg:row-start-1 lg:col-span-2 lg:w-auto lg:self-end">
+          <button aria-label="Öffne die Navigation" title="Öffne die Navigation" class="js-navigation-close ml-auto mr-16.6/100 pt-4 md:pt-6 lg:hidden">
+            <svg width="22.062" height="22.062" viewBox="0 0 22.062 22.062">
+              <g transform="translate(-278.076 -15.076)">
+                <line x2="30" transform="translate(278.5 15.5) rotate(45)" fill="none" stroke="#faf9f7" stroke-width="1.2"/>
+                <line x2="30" transform="translate(278.5 36.713) rotate(-45)" fill="none" stroke="#faf9f7" stroke-width="1.2"/>
+              </g>
+            </svg>
+          </button>
           <div class="flex flex-col items-center justify-center h-full lg:h-auto lg:flex-row lg:block">
-            <a href="#" class="block mb-12 opacity-70 transform lg:hidden hover:scale-105" aria-label="Zum Anfang der Startseite" title="Zum Anfang der Startseite">
+            <a href="#hero" class="js-link block mb-12 opacity-70 transform lg:hidden hover:scale-105" aria-label="Zum Anfang der Startseite" title="Zum Anfang der Startseite">
               <svg class="w-28 h-auto mx-auto block" viewBox="0 0 112.55 51.92">
                 <defs>
                     <style>.a{fill:#f9f7f4;}</style>
@@ -409,7 +421,7 @@
     <!-- footer -->
     <footer id="footer" class="css-custom-grid relative mx-auto pt-5 lg:pt-10 before:h-full before:-top-8 before:w-full before:opacity-40 before:-z-1 before:absolute before:bg-repeat-x lg:before:max-w-4xl lg:before:right-0 lg:before:top-0 lg:before:w-4/5 lg:before:bg-repeat">
       <div class="bg-green col-start-1 col-end-9 pt-14 px-16.6/100 pb-10 lg:col-end-7">
-        <a href="#" aria-label="Zum Anfang der Startseite" title="Zum Anfang der Startseite" class="w-32 transform hover:opacity-60 hover:scale-105">
+        <a href="#hero" aria-label="Zum Anfang der Startseite" title="Zum Anfang der Startseite" class="js-link w-32 transform hover:opacity-60 hover:scale-105">
           <svg width="120" height="28.83" viewBox="0 0 139.5 33">
             <defs>
                 <style>.cls-1{fill:#f9f7f4;}</style>

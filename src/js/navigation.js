@@ -1,43 +1,63 @@
 (function () {
-  let toggle = document.querySelector('.js-navigation-toggle');
+  let toggleOpen = document.querySelector('.js-navigation-open');
+  let toggleClose = document.querySelector('.js-navigation-close');
   let navigation = document.querySelector('.js-navigation');
+  let navItems = document.querySelectorAll('.js-link');
   let navOpen = false;
 
   function isNavigationExisting() {
-    return toggle && navigation;
+    return toggleOpen && toggleClose && navigation;
   }
 
   function openNavigation() {
     navigation.classList.remove('hidden');
-    toggle.classList.add('js-navigation-toggle--open');
     navOpen = true;
   }
 
   function closeNavigation() {
     navigation.classList.add('hidden');
-    toggle.classList.remove('js-navigation-toggle--open');
     navOpen = false;
   }
 
-  function toggleNavigation() {
+  function addEventListenerToToggleOpen() {
     if (window.matchMedia('(max-width: 1024px)').matches) {
-      return navOpen ? closeNavigation() : openNavigation();
-    } else {
-      return;
+      toggleOpen.addEventListener('click', () => {
+        if(!navOpen) {
+          openNavigation();
+        }
+      });
     }
   }
 
-  function addEventListenerToToggle() {
-    toggle.addEventListener('click', () => {
-      toggleNavigation();
-    });
+  function addEventListenerToLinks() {
+    if (window.matchMedia('(max-width: 1024px)').matches) {
+      for(let i = 0; i < navItems.length; i++) {
+        navItems[i].addEventListener('click', () => {
+          if(navOpen) {
+            closeNavigation();
+          }
+        });
+      }
+    }
+  }
+
+  function addEventListenerToToggleClose() {
+    if (window.matchMedia('(max-width: 1024px)').matches) {
+      toggleClose.addEventListener('click', () => {
+        if(navOpen) {
+          closeNavigation();
+        }
+      });
+    }
   }
 
   function initMenu() {
     if (!isNavigationExisting()) {
       return;
     }
-    addEventListenerToToggle();
+    addEventListenerToToggleOpen();
+    addEventListenerToToggleClose();
+    addEventListenerToLinks();
   }
 
   initMenu();
