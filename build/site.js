@@ -63,87 +63,87 @@
   initMenu();
 })();
 (function () {
-    let navItems = document.querySelectorAll('.js-link');
-    
-    function initSmoothScrolling() {
-      navItems.forEach(trigger => {
-        trigger.onclick = function(e) {
-          e.preventDefault();
-          
-          let hash = this.getAttribute('href');
-          let target = document.querySelector(hash);
-          let headerOffset = 0;
-          if(window.matchMedia('(max-width: 1024px)').matches) {
-            headerOffset = 75;
-          } else {
-            headerOffset = 150;
-          }
-          let elementPosition = target.offsetTop;
-          let offsetPosition = elementPosition - headerOffset;
-    
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth"
-        });
-        }
-      });
-    }
-    
-    initSmoothScrolling();
-  })();
-  (function () {
-    let listItems = document.querySelectorAll('.js-list-item');
-    let sublists = document.querySelectorAll('.js-sublist');
-    let labels = document.querySelectorAll('.js-list-label');
+  let navItems = document.querySelectorAll('.js-link');
   
-    function detectRezise() {
-      window.addEventListener('resize', function() {
-        if (window.matchMedia('(min-width: 1024px)').matches) {
-          for (let i = 0; i < sublists.length; i++ ) {
-            sublists[i].classList.remove('hidden');
-          }
+  function initSmoothScrolling() {
+    navItems.forEach(trigger => {
+      trigger.onclick = function(e) {
+        e.preventDefault();
+        
+        let hash = this.getAttribute('href');
+        let target = document.querySelector(hash);
+        let headerOffset = 0;
+        if(window.matchMedia('(max-width: 1024px)').matches) {
+          headerOffset = 75;
         } else {
-          for (let i = 0; i < sublists.length; i++ ) {
-            sublists[i].classList.add('hidden');
-            labels[i].classList.add('js-list-label--rotate');
-          }
+          headerOffset = 150;
         }
-      });
-    }
+        let elementPosition = target.offsetTop;
+        let offsetPosition = elementPosition - headerOffset;
   
-    function toggleNavigation(index) {
-      if (window.matchMedia('(max-width: 1024px)').matches) {
-        sublists[index].classList.toggle('hidden');
-        labels[index].classList.toggle('js-list-label--rotate');
-      } else {
-        return;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+      });
       }
-    }  
+    });
+  }
   
-    function addEventListenerToToggle(listItem, index) {
-        listItem.addEventListener('click', () => {
-        toggleNavigation(index);
-      });
-    }  
-  
-    function hideAllSublists() {
+  initSmoothScrolling();
+})();
+(function () {
+  let listItems = document.querySelectorAll('.js-list-item');
+  let sublists = document.querySelectorAll('.js-sublist');
+  let labels = document.querySelectorAll('.js-list-label');
+
+  function detectRezise() {
+    window.addEventListener('resize', function() {
       if (window.matchMedia('(min-width: 1024px)').matches) {
-        return;
+        for (let i = 0; i < sublists.length; i++ ) {
+          sublists[i].classList.remove('hidden');
+        }
+      } else {
+        for (let i = 0; i < sublists.length; i++ ) {
+          sublists[i].classList.add('hidden');
+          labels[i].classList.add('js-list-label--rotate');
+        }
       }
-      for (let i = 0; i < sublists.length; i++ ) {
-        sublists[i].classList.add('hidden');
-        labels[i].classList.add('js-list-label--rotate');
-      }
-    }  
-  
-    function initDropdown() {
-      for (let i = 0; i < listItems.length; i++ ) {
-        hideAllSublists();
-        addEventListenerToToggle(listItems[i], i);
-        detectRezise();
-      }
+    });
+  }
+
+  function toggleNavigation(index) {
+    if (window.matchMedia('(max-width: 1024px)').matches) {
+      sublists[index].classList.toggle('hidden');
+      labels[index].classList.toggle('js-list-label--rotate');
+    } else {
+      return;
     }
-  
-    initDropdown();
-  })();
+  }  
+
+  function addEventListenerToToggle(listItem, index) {
+      listItem.addEventListener('click', () => {
+      toggleNavigation(index);
+    });
+  }  
+
+  function hideAllSublists() {
+    if (window.matchMedia('(min-width: 1024px)').matches) {
+      return;
+    }
+    for (let i = 0; i < sublists.length; i++ ) {
+      sublists[i].classList.add('hidden');
+      labels[i].classList.add('js-list-label--rotate');
+    }
+  }  
+
+  function initDropdown() {
+    for (let i = 0; i < listItems.length; i++ ) {
+      hideAllSublists();
+      addEventListenerToToggle(listItems[i], i);
+      detectRezise();
+    }
+  }
+
+  initDropdown();
+})();
   
