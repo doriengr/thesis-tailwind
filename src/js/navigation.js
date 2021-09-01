@@ -20,35 +20,29 @@
   }
 
   function addEventListenerToToggleOpen() {
-    if (window.matchMedia('(max-width: 1024px)').matches) {
-      toggleOpen.addEventListener('click', () => {
-        if(!navOpen) {
-          openNavigation();
-        }
-      });
-    }
+    toggleOpen.addEventListener('click', () => {
+      if(window.matchMedia('(max-width: 1024px)').matches && !navOpen) {
+        openNavigation();
+      }
+    });
   }
 
   function addEventListenerToLinks() {
-    if (window.matchMedia('(max-width: 1024px)').matches) {
-      for(let i = 0; i < navItems.length; i++) {
-        navItems[i].addEventListener('click', () => {
-          if(navOpen) {
-            closeNavigation();
-          }
-        });
-      }
-    }
-  }
-
-  function addEventListenerToToggleClose() {
-    if (window.matchMedia('(max-width: 1024px)').matches) {
-      toggleClose.addEventListener('click', () => {
-        if(navOpen) {
+    for(let i = 0; i < navItems.length; i++) {
+      navItems[i].addEventListener('click', () => {
+        if(window.matchMedia('(max-width: 1024px)').matches && navOpen) {
           closeNavigation();
         }
       });
     }
+  }
+
+  function addEventListenerToToggleClose() {
+    toggleClose.addEventListener('click', () => {
+      if(window.matchMedia('(max-width: 1024px)').matches && navOpen) {
+        closeNavigation();
+      }
+    });
   }
 
   function initMenu() {
