@@ -6,9 +6,6 @@ module.exports = {
       '/src/js/*.js',
       '/src/css/*.css',
     ],
-    safelist: [
-      'rotate-180',
-    ],
   },
   theme: {
     colors: {
