@@ -51,30 +51,6 @@ button:focus {
   transform: rotate(0deg);
 }
 
-/* Add animation to navigation toggle */
-.js-navigation-toggle--open {
-  padding: 1rem;
-}
-
-.js-navigation-toggle--open > div {
-  position: absolute;
-  right: 0;
-  background-color: #faf9f7 !important;
-}
-
-.js-navigation-toggle--open > div:first-child {
-  transform: rotate(45deg);
-}
-
-.js-navigation-toggle--open > div:nth-child(2) {
-  width: 0;
-}
-
-.js-navigation-toggle--open > div:last-child {
-  transform: rotate(-45deg);
-  width: 1.75rem;
-}
-
 @media (min-width: 1024px) {
   .js-list-label::after {
     background-image: none;
