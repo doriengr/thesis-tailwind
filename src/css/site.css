@@ -1,7 +1,5 @@
-/* Add fonts */
 @import url('https://use.typekit.net/nnh0eap.css');
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
@@ -11,14 +9,12 @@ button:focus {
   outline-color: #8e8b7c;
 }
 
-/* Custom grid */
 .css-custom-grid {
   display: grid;
   grid-template-columns: 6% 20% 5.5% 18.5% 6% 32% 6% 6%;
   grid-template-rows: auto;
 }
 
-/* Add writing mode */
 .css-writing-mode {
   writing-mode: vertical-rl;
 }
@@ -29,14 +25,12 @@ button:focus {
   }
 }
 
-/* Add clip path to images */
 @media (min-width: 1024px) {
   .css-clip-path {
     clip-path: url('#clip-path-full');
   }
 }
 
-/* Add elements after pseudoclass */
 .js-list-label {
   position: relative;
 }
