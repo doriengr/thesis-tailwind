@@ -40,4 +40,7 @@
   .circle {
     @apply after:border after:border-brown after:h-20 after:w-20 after:z-40 after:rounded-full after:absolute lg:after:w-48 lg:after:h-48;
   }
+  .custom-grid {
+    @apply grid grid-cols-[6%,20%,5.5%,18.5%,6%,32%,6%,6%];
+  }
 }

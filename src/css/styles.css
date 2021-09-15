@@ -669,6 +669,10 @@ button:active{
 		width: 12rem;
 	}
 }
+.custom-grid{
+	display: grid;
+	grid-template-columns: 6% 20% 5.5% 18.5% 6% 32% 6% 6%;
+}
 .sr-only{
 	position: absolute;
 	width: 1px;
