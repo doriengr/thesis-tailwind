@@ -9,12 +9,6 @@ button:focus {
   outline-color: #8e8b7c;
 }
 
-.css-custom-grid {
-  display: grid;
-  grid-template-columns: 6% 20% 5.5% 18.5% 6% 32% 6% 6%;
-  grid-template-rows: auto;
-}
-
 .css-writing-mode {
   writing-mode: vertical-rl;
 }
