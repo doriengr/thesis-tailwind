@@ -4,11 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-a:focus,
-button:focus {
-  outline-color: #8e8b7c;
-}
-
 .css-writing-mode {
   writing-mode: vertical-rl;
 }

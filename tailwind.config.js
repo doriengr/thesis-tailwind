@@ -51,6 +51,9 @@ module.exports = {
         '8.3/100': '12%',
         '3/10': '30%',
       },
+      outline: {
+        green: '2px solid #8e8b7c'
+      },
       height: {
         '112': '28rem',
       },
