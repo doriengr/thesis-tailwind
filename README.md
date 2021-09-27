@@ -3,21 +3,20 @@
 ## Umfang
 
 - Umsetzung eines OnePagers einer individuellen Gestaltung für eine Corporate Webseite eines fiktiven Cafès in Flensburg
-- Umsetzung findet mithilfe des CSS-Frameworks Tailwind-CSS statt
+- Umsetzung findet mithilfe des CSS-Frameworks TailwindCSS statt
 - index.html ist der Ausgangspunkt des OnePagers
 
 ## Verwendete Abhängigkeiten für Code
 
 - CSS-Framework: tailwindcss
 - Abhängigkeiten für tailwindcss: autoprefixer, postcss
+- Löschen von nicht genutzten Dateien mit purgecss
 
 ## Verwendete Abhängigkeiten für Funktionen
 
-- Nodemon: Automatisches starten der Applikation 
-- Npm Run All: Auführen mehrerer Skripte gleichzeitig
-- Serve: Starten eines lokalen Servers
-- Postcss-cli: Ausführen von PostCSS von der Kommandozeile aus
-
+- nodemon
+- npm-run-all
+- serve
 
 -- Umsetzung findet im Rahmen der Thesis von Dorien Grönwald statt --
 
