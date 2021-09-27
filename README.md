@@ -14,6 +14,11 @@
 
 ## Verwendete Abhängigkeiten für Funktionen
 
+- tailwindcss
+- minify
+- autoprefixer
+- postcss
+- postcss-cli
 - nodemon
 - npm-run-all
 - serve
